@@ -17,22 +17,22 @@ public class SetMenu {
             System.out.print("가격을 입력 : ");
             arySet[i] = sc.nextInt();
         }
-        int hMax = arySet[0];
+
         int hMin = arySet[0];
 
 
         for(int e = 0; e < (arySet.length-2); e++){
 
-            if(arySet[e] > hMax) hMax = arySet[e];
+
             if(arySet[e] < hMin) hMin = arySet[e];
         }
 
-        int bMax = arySet[4];
+
         int bMin = arySet[4];
 
         for(int e = (arySet.length-2); e < arySet.length; e++){
 
-            if(arySet[e] > bMax) bMax = arySet[e];
+
             if(arySet[e] < bMin) bMin = arySet[e];
 
         }

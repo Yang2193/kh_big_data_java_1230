@@ -1,0 +1,53 @@
+package Math클래스;
+
+import java.util.Arrays;
+
+//Math 클래스의 모든 메소드는 클래스 메소드이므로 객체를 생성하지 않고 바로 사용 함.
+//random() : 0.0 ~ 1.0 미만의 임의의 double형 값을 생성해서 반환함.
+//7자리의 로또 번호 생성하기.
+//7개의 배열을 만들고 첫번째부터 여섯번째까지는 0~50 사이의 임의의 수 생성 후 대입
+// 마지막 7번째는 50~100사이의 임의의 수를 만들어서 대입하고, 한번에 출력. // 중복 허용
+public class MathMainEx {
+    public static void main(String[] args) {
+
+        //abs() 메소드 : 절대값 구하는 매소드, 양수면 양수, 음수면 양수
+        //floor() 메소드 : 소수점 이하를 무조건 날림
+        //ceil() : 소수점 이하가 있으면 무조건 올림
+        //round() : 소수점 첫째 자리에서 반올림.
+
+        System.out.println(Math.floor(10.9999));
+        System.out.println(Math.floor(10.0001));
+        System.out.println(Math.floor(10.5));
+        System.out.println(Math.ceil(10.9999));
+        System.out.println(Math.ceil(10.0001));
+        System.out.println(Math.ceil(10.5));
+        System.out.println(Math.round(10.9999));
+        System.out.println(Math.round(10.0001));
+        System.out.println(Math.round(10.5)); // 소수점 첫째 자리에서 반올림.
+        System.out.println(Math.max(11, 9.9999));
+        System.out.println(Math.min(11, 9.9999));
+        System.out.println(Math.pow(2,5)); // 2 * 2 * 2 * 2 * 2
+
+ /*       int[] lotto = new int[7];
+        for(int i = 0; i < 6; i++){
+            lotto[i] = (int)(Math.random()*51);
+        }
+
+
+        lotto[6] = (int)((Math.random() * 51)+50);
+
+        System.out.println(Arrays.toString(lotto));*/
+
+
+
+      /*  // 0 ~ 99 사이의 임의의 수 생성
+        for(int i = 0 ; i < 100; i++){
+            System.out.println((int)(Math.random() * 100)); // 0~99 총 100개 사이의 값이 랜덤으로 튀어나옴.
+        }
+
+        // 3 ~ 8 사이의 임의의 수 생성하기
+
+        System.out.println((int)(Math.random() * 6) + 3);*/
+
+    }
+}

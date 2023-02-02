@@ -24,6 +24,7 @@ public class ClassSortEx1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int cnt = 0;
+        int preScore = 0;
         System.out.print("학생 수 입력 : ");
         int sNum = sc.nextInt();
         TreeSet<StudentInfo> ts = new TreeSet<>(new ScoreSort());
@@ -41,7 +42,10 @@ public class ClassSortEx1 {
         System.out.println(" 석차  성적  이름  학번");
         System.out.println("------------------------");
         for(StudentInfo s : ts){
-            System.out.printf("%2d%6d%6s%6d\n", ++cnt, s.score, s.name, s.studentId);
+            if(preScore != s.score) cnt ++;
+            System.out.printf("%2d%6d%6s%6d\n", cnt, s.score, s.name, s.studentId);
+
+            preScore = s.score; // 현재 점수를 변수에 저장.
 
         }
 

@@ -22,7 +22,7 @@ public class StreamEx1 {
         // 인텔리제이에서는 . 찍고 사용 가능한 메소드가 나오는데, 진한 글씨로 나오는 건 본인이 가지고 있는 메소드.
         //연한 것은 상속받은 메소드.
         //list.stream().filter(s -> s.intValue() >= 5).forEach(e -> System.out.println(e)); // 괄호 안의 s는 임의의 알파벳. 향상된 for문에서 e 쓰는 거랑 똑같음.
-        // 이 경우 .filter()가 중개연산이 됨. .forEach()가 최종연산
+        // .filter()가 중개연산 .forEach()가 최종연산
         //list.stream().filter(s -> s.intValue() >= 5).forEach(System.out::println);
         // 위는 메소드 참조방식.
         int sum = list.stream().mapToInt(e->e).sum(); //기존 요소를 순회해줘야하기 때문에 중간연산이 있어야 한다.

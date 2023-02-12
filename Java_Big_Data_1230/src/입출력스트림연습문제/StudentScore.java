@@ -1,6 +1,6 @@
-package 자바입출력실습예제;
+package 입출력스트림연습문제;
 
-public class StudentScore {
+public class StudentScore{ // TreeSet에 객체를 넣을 때는 정렬조건이 될 기준이 없기 때문에 Comparable을 넣어
     String name;
     int kor;
     int math;
@@ -16,4 +16,5 @@ public class StudentScore {
     public int getTotal(){
         return kor+math+eng;
     }
+
 }
